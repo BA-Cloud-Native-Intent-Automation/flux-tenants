@@ -3,5 +3,4 @@ kind: Kustomization
 namespace: apps
 
 resources:
-  - ./base/deployment.yaml
-  
+  - ./base/deployment.yml
