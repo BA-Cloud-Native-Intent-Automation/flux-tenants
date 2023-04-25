@@ -1,0 +1,15 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: netshoot
+spec:
+  template:
+    spec:
+      containers:
+        - name: netshoot-1
+          command:
+            - /bin/bash
+            - -c
+            - while true; do echo "Hello from netshoot"; sleep 60;done
+            
